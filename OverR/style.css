@@ -1,0 +1,200 @@
+.fixed-top{
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px , 0 , 20px , 0;
+  position: sticky;
+}
+
+
+.card__article
+{
+    width: 326px;
+    height: 450px;
+    position: relative;
+    border-style: solid;
+    border-radius: 0 0 10px 10px;
+}
+
+.card__img
+{
+    width: 320px;
+    height: 300px;
+
+}
+
+.card__data
+{
+    width: 320px;
+    height: 140px;
+    background-color: rgb(247, 241, 241);
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 0 0 10px 10px;
+    bottom: -2rem;
+    left:0;
+    right:0;
+    margin-inline: auto;
+}
+
+
+  @media (max-width: 1920px){
+    
+
+    .layout {
+        width: 1920px;
+        height: 2000px;
+      
+        display: grid;
+        grid:
+          "header header header" auto
+          "leftSide body rightSide" 1fr
+          "footer footer footer" auto
+          / auto 1fr auto;
+        gap: 8px;
+        
+      }
+      
+      .header { grid-area: header; }
+      .leftSide { grid-area: leftSide; }
+      .body { grid-area: body; }
+      .rightSide { grid-area: rightSide; }
+      .footer { grid-area: footer; }
+
+      .contcards {
+        margin-top: 120px;
+        margin-left: 20px;
+        display: grid;
+        grid-template-rows: repeat(4, 480px);
+        grid-template-columns: repeat(4, 350px);
+        gap: 30px 12px;
+      }
+
+  }
+
+  @media (max-width: 1366px){
+
+    .layout {
+        width: 1280px;
+        height: 1200px;
+      
+        display: grid;
+        grid:
+          "header header header" auto
+          "leftSide body rightSide" 1fr
+          "footer footer footer" auto
+          / auto 1fr auto;
+        gap: 8px;
+
+      }
+      
+      .header { grid-area: header; }
+      .leftSide { grid-area: leftSide; }
+      .body { grid-area: body; }
+      .rightSide { grid-area: rightSide; }
+      .footer { grid-area: footer; }
+      
+      .contcards {
+        margin-top: 120px;
+        margin-left: 20px;
+        display: grid;
+        place-content: center;
+        grid-template-rows: repeat(5, 480px);
+        grid-template-columns: repeat(3, 350px);
+        gap: 30px 12px;
+      }
+  }
+
+  @media (max-width: 1300px){
+
+    .layout {
+        width: 1024px;
+        height: 2000px;
+      
+        display: grid;
+        grid:
+          "header header header" auto
+          "leftSide body rightSide" 1fr
+          "footer footer footer" auto
+          / auto 1fr auto;
+        gap: 8px;
+      }
+      
+      .header { grid-area: header; }
+      .leftSide { grid-area: leftSide; }
+      .body { grid-area: body; }
+      .rightSide { grid-area: rightSide; }
+      .footer { grid-area: footer; }
+
+
+      .contcards {
+
+        margin-left: 20px;
+        display: grid;
+        grid-template-rows: repeat(8, 480px);
+        grid-template-columns: repeat(2, 350px);
+        gap: 30px 12px;
+      }
+  }
+
+  @media (max-width: 640px){
+
+     .main{
+      width: 400px;
+      height: 2000px;
+    } 
+    
+    .layout {
+        width: 360px;
+        height: 2000px;
+        display: grid;
+        grid:
+          "header header header" 100px
+          "leftSide body rightSide" auto
+          "footer footer footer" auto
+          / auto 1fr auto;
+        gap: 8px;
+      }
+      
+      .header { grid-area: header; }
+      .leftSide { grid-area: leftSide; }
+      .body { grid-area: body; }
+      .rightSide { grid-area: rightSide; }
+      .footer { grid-area: footer; }
+
+      .contcards {
+        width: 320px;
+        height: 2000px;
+        margin-left: 50px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-rows: repeat(16, 3fr);
+        grid-template-columns: repeat(1 , 3fr);
+        gap: 50px;
+        
+      }
+      .card__article
+     {
+     width: 250px;
+     height: 320px;
+     position: relative;
+     border-style: solid;
+     border-radius: 0 0 10px 10px;
+       }
+      .card__img
+      {
+          width: 250px;
+          height: 200px;
+      
+      }
+      .card__data
+  { 
+    width: 250px;
+    height: 120px;
+    font-size: medium;
+                       }
+  }
+
+    

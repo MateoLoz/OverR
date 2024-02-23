@@ -1,0 +1,52 @@
+ foreach ($listaproducto as $productos) {?>
+
+
+        <nav class="contcards">
+           
+         
+         <article class="card__article">
+             <img src=" <?php echo $productos['img'];?>" alt="UPD" class="card__img">
+
+             <div class="card__data">
+             <h4 style="margin-top: -4px;"> <?php echo $productos['nombre'];?> </h4>
+                 <h4 style="margin-top: 4px;"> <?php echo $productos['precio'];?></h4>
+                 <form action="" method="post">
+
+                 <button style="margin-top: 7px;" class="lg:inline-block py-2 px-6 bg-red-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" name="btnAccion" value="Agregar" type="submit">Agregar al carrito</button>
+                 </form>
+             </div>
+         </article>
+
+         <article class="card__article">
+         <img src="<?php echo $productos['img'];?>" alt="UPD" class="card__img">
+
+         <div class="card__data">
+         <h4 style="margin-top: -4px;">  <?php echo $productos['nombre'];?> </h4>
+             <h4 style="margin-top: 4px;"> <?php echo $productos['precio'];?> </h4>
+             <form action="" method="post">
+
+             <button style="margin-top: 7px;" class="lg:inline-block py-2 px-6 bg-red-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" name="btnAccion" value="Agregar" type="submit">Agregar al carrito</button>
+             </form>
+         </div>
+     </article>
+
+     <article class="card__article">
+     <img src="" alt="UPD" class="card__img">
+
+     <div class="card__data">
+     <h4 style="margin-top: -4px;">  </h4>
+         <h4 style="margin-top: 4px;">  </h4>
+         <form action="" method="post">
+
+         <button style="margin-top: 7px;" class="lg:inline-block py-2 px-6 bg-red-500 hover:bg-red-600 text-sm text-white font-bold rounded-xl transition duration-200" name="btnAccion" value="Agregar" type="submit">Agregar al carrito</button>
+         </form>
+     </div>
+ </article>
+     
+         
+
+    </nav>
+
+
+
+<?php }
